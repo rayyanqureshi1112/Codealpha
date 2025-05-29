@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel = "stylesheet">
+    
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src = "images/logo.png" class = "logo">
+            <ul id = "sidemenu">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#services">Service</a></li>
+                <li><a href = "#portfolio">Portfolio</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+        </nav>
+        <div class = "header-text">
+            <p>Software Engineer</p>
+             <h1>Hi, I'm <span>Mohammed <br> Rayyan Qureshi </span> From India</h1>
+        </div>
+    </div>
+  </div>
+   <!-- About section -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src = "images/user.png">
+            </div>
+            <div class = "about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p>Hi there! I’m Mohammed Rayyan Qureshi, a passionate Software Engineer with a 
+                    strong drive for crafting high-quality, scalable, and innovative software solutions.
+                     With a solid foundation in programming, I specialize in developing robust applications that 
+                     prioritize both functionality and user experience.
+
+                    I’m always eager to tackle new challenges, learn new technologies, and bring
+                     creative ideas to life through code. Whether it’s working solo or collaborating
+                      with a team, I take pride in writing clean, efficient code that makes a real impact.</p>
+                    <div class = "tab-titles">
+                        <p class = "tab-links active-links" onclick = "opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>Internship at Prodigy info tech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li><span>2027</span><br>Btech in Computer Science from Amity University Rajasthan</li>
+                            <li><span>2023</span><br>Senior Secondary from Pooja International Academy </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+   <div id = "services">
+    <div class="container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class = "services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create custom, responsive websites that are visually stunning and 
+                    user-friendly. With a focus on modern design, mobile optimization,
+                     and SEO, I ensure your site stands out and delivers a seamless experience
+                      across all devices.</p>
+                      <a href = "#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I craft intuitive and engaging user interfaces with a focus on seamless user experiences.
+                     By combining user-centered design principles and modern design trends, I ensure your product
+                     is both visually appealing and easy to navigate.</p>
+                      <a href = "#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I design intuitive and visually captivating mobile apps that provide a smooth and engaging user 
+                    experience. Focusing on usability, responsive design, and user-centered functionality, I help bring 
+                    your app idea to life with a polished, mobile-first approach.</p>
+                      <a href = "#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+ <!-- Portfolio Section  -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class = "work-list">
+            <div class = "work">
+                <img src = "images/work-1.png">
+                <div class = "layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. 
+                        Download it form play store and app store.
+                    </p>
+                    <a href = "#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "images/work-2.png">
+              <div class="layer">
+                <h3>Music App</h3>
+                <p>Stream your favorite music effortlessly with high-quality audio, 
+                    personalized playlists, and offline playback.</p>
+                <a href = "#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class = "work">
+                <img src = "images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Shop online with ease, featuring a wide selection, exclusive deals, 
+                        and fast, secure checkout.</p>
+                    <a href = "#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href = "#" class = "btn">See more</a>
+    </div>
+  </div>
+
+  <!-- Contact Section  -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rayyanqureshi0123@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8005859401</p>
+                <div class="social-icons">
+                   <a href = "https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                   <a href = "https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                   <a href = "https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href = "images/my-cv.pdf" download class = "btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder = "Your Name" required>
+                    <input type = "email" name = "Email" placeholder = "Your Email" required>
+                    <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+                    <button type = "submit" class ="btn btn2" >Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
+    </div>
+   </div>
+  <script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    
+    }
+  </script>
+  <script>
+    let sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykfJ4rvEQnKrypGpcF-jnEpsTGE6HlnJ4CSVALGCKN2SFQkZL60NJ5XPv4I2xMLoKMXA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
